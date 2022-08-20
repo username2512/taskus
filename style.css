@@ -1,0 +1,306 @@
+<!—CSS Reset : BEGIN 
+/* <style> */
+
+    /* What it does: Remove spaces around the email design added by some email clients. */
+    /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+    Html,
+Body {
+Margin: 0 auto !important;
+Padding: 0 !important;
+Height: 100% !important;
+Width: 100% !important;
+Background: #f1f1f1;
+}
+
+/* What it does: Stops email clients resizing small text. */
+* {
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+
+/* What it does: Centers email on Android 4.4 */
+Div[style*=”margin: 16px 0”] {
+Margin: 0 !important;
+}
+
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+Table,
+Td {
+Mso-table-lspace: 0pt !important;
+Mso-table-rspace: 0pt !important;
+}
+
+/* What it does: Fixes webkit padding issue. */
+Table {
+Border-spacing: 0 !important;
+Border-collapse: collapse !important;
+Table-layout: fixed !important;
+Margin: 0 auto !important;
+}
+
+/* What it does: Uses a better rendering method when resizing images in IE. */
+Img {
+-ms-interpolation-mode:bicubic;
+}
+
+/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+A {
+Text-decoration: none;
+}
+
+/* What it does: A work-around for email clients meddling in triggered links. */
+*[x-apple-data-detectors],  /* iOS */
+.unstyle-auto-detected-links *,
+.aBn {
+Border-bottom: 0 !important;
+Cursor: default !important;
+Color: inherit !important;
+Text-decoration: none !important;
+Font-size: inherit !important;
+Font-family: inherit !important;
+Font-weight: inherit !important;
+Line-height: inherit !important;
+}
+
+/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+.a6S {
+Display: none !important;
+Opacity: 0.01 !important;
+}
+
+/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+.im {
+Color: inherit !important;
+}
+
+/* If the above doesn’t work, add a .g-img class to any image in question. */
+Img.g-img + div {
+Display: none !important;
+}
+
+/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+/* Create one of these media queries for each additional viewport size you’d like to fix */
+
+/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+U ~ div .email-container {
+    Min-width: 320px !important;
+}
+}
+/* iPhone 6, 6S, 7, 8, and X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+U ~ div .email-container {
+    Min-width: 375px !important;
+}
+}
+/* iPhone 6+, 7+, and 8+ */
+@media only screen and (min-device-width: 414px) {
+U ~ div .email-container {
+    Min-width: 414px !important;
+}
+}
+
+/* </style> */
+
+<!—CSS Reset : END 
+
+<!—Progressive Enhancements : BEGIN 
+/* <style> */
+
+  .primary{
+Background: #30e3ca;
+}
+.bg_white{
+Background: #ffffff;
+}
+.bg_light{
+Background: #fafafa;
+}
+.bg_black{
+Background: #000000;
+}
+.bg_dark{
+Background: rgba(0,0,0,.8);
+}
+.email-section{
+Padding:2.5em;
+}
+
+/*BUTTON*/
+.btn{
+Padding: 10px 15px;
+Display: inline-block;
+}
+.btn.btn-primary{
+Border-radius: 5px;
+Background: #30e3ca;
+Color: #ffffff;
+}
+.btn.btn-white{
+Border-radius: 5px;
+Background: #ffffff;
+Color: #000000;
+}
+.btn.btn-white-outline{
+Border-radius: 5px;
+Background: transparent;
+Border: 1px solid #fff;
+Color: #fff;
+}
+.btn.btn-black-outline{
+Border-radius: 0px;
+Background: transparent;
+Border: 2px solid #000;
+Color: #000;
+Font-weight: 700;
+}
+
+H1,h2,h3,h4,h5,h6{
+Font-family: ‘Lato’, sans-serif;
+Color: #000000;
+Margin-top: 0;
+Font-weight: 400;
+}
+
+Body{
+Font-family: ‘Lato’, sans-serif;
+Font-weight: 400;
+Font-size: 15px;
+Line-height: 1.8;
+Color: rgba(0,0,0,.4);
+}
+
+A{
+Color: #30e3ca;
+}
+
+Table{
+}
+/*LOGO*/
+
+.logo h1{
+Margin: 0;
+}
+.logo h1 a{
+Color: #30e3ca;
+Font-size: 24px;
+Font-weight: 700;
+Font-family: ‘Lato’, sans-serif;
+}
+
+/*HERO*/
+.hero{
+Position: relative;
+z-index: 0;
+}
+
+.hero .text{
+Color: rgba(0,0,0,.3);
+}
+.hero .text h2{
+Color: #000;
+Font-size: 40px;
+Margin-bottom: 0;
+Font-weight: 400;
+Line-height: 1.4;
+}
+.hero .text h3{
+Font-size: 24px;
+Font-weight: 300;
+}
+.hero .text h2 span{
+Font-weight: 600;
+Color: #30e3ca;
+}
+
+
+/*HEADING SECTION*/
+.heading-section{
+}
+.heading-section h2{
+Color: #000000;
+Font-size: 28px;
+Margin-top: 0;
+Line-height: 1.4;
+Font-weight: 400;
+}
+.heading-section .subheading{
+Margin-bottom: 20px !important;
+Display: inline-block;
+Font-size: 13px;
+Text-transform: uppercase;
+Letter-spacing: 2px;
+Color: rgba(0,0,0,.4);
+Position: relative;
+}
+.heading-section .subheading::after{
+Position: absolute;
+Left: 0;
+Right: 0;
+Bottom: -10px;
+Content: ‘’;
+Width: 100%;
+Height: 2px;
+Background: #30e3ca;
+Margin: 0 auto;
+}
+
+.heading-section-white{
+Color: rgba(255,255,255,.8);
+}
+.heading-section-white h2{
+Font-family:
+Line-height: 1;
+Padding-bottom: 0;
+}
+.heading-section-white h2{
+Color: #ffffff;
+}
+.heading-section-white .subheading{
+Margin-bottom: 0;
+Display: inline-block;
+Font-size: 13px;
+Text-transform: uppercase;
+Letter-spacing: 2px;
+Color: rgba(255,255,255,.4);
+}
+
+
+Ul.social{
+Padding: 0;
+}
+Ul.social li{
+Display: inline-block;
+Margin-right: 10px;
+}
+
+/*FOOTER*/
+
+.footer{
+Border-top: 1px solid rgba(0,0,0,.05);
+Color: rgba(0,0,0,.5);
+}
+.footer .heading{
+Color: #000;
+Font-size: 20px;
+}
+.footer ul{
+Margin: 0;
+Padding: 0;
+}
+.footer ul li{
+List-style: none;
+Margin-bottom: 10px;
+}
+.footer ul li a{
+Color: rgba(0,0,0,1);
+}
+
+
+@media screen and (max-width: 500px) {
+
+
+}
+
+
+/* </style> */
